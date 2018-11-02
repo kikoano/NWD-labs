@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <script>
+        function Rectangle(width, height) {
+            this.width = width;
+            this.height = height;
+        }
+        Rectangle.prototype.PrintRectangle = function() {
+            return "Rectangle width is: "+this.width+" and rectangle height is:" + this.height;
+        }
+        Rectangle.prototype.RectanglePerimetar= function(){
+            return 2*(this.width+this.height);
+        }
+        let rect1 = new Rectangle(2,4);
+        let rect2 = new Rectangle(8.5,11);
+        function show(){
+            document.getElementById("p1").innerHTML = "<b>Paragraph no: 1</b><br>"+rect1.PrintRectangle()+"<br>"+rect2.PrintRectangle();
+        }
+        function calculate() {
+            let p;
+            if(rect1.RectanglePerimetar()> rect2.RectanglePerimetar())
+                p =rect1.RectanglePerimetar();
+            else
+                p = rect2.RectanglePerimetar();
+            document.getElementById("p2").innerHTML = "<b>Paragraph no: 2</b><br>The biggest rectangle has perimeter of "+p; 
+        }
+    </script>
+</head>
+
+<body onload="show()">
+    <h1>Напреден Веб Дизајн Вежби</h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <button onclick="calculate()">Calculate Perimetar</button>
+</body>
+
+</html>

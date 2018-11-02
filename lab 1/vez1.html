@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function sum(){
+            let num = 10;
+            document.getElementById("sum").innerHTML = num +5;
+        }
+        function addStr(){
+            let str = "Hello";
+            document.getElementById("addStr").innerHTML = str +" World!";
+        }
+    </script>
+</head>
+
+<body>
+    <p>Креирајте вредност, доделете и вредност и прикажете ја:</p>
+    <p id="yourID"></p>
+    <button onclick="yourFunctionName()">Прикажи променливи</button>
+    <p id=sum></p>
+    <button onclick="sum()">Собери</button>
+    <p id=addStr></p>
+    <button onclick="addStr()">Додади стринг</button>
+    <script>
+        function yourFunctionName() {
+            let number = 12345;
+            let string = "text";
+            document.getElementById("yourID").innerHTML = number + "<br>" + string;
+        }
+    </script>
+</body>
+
+</html>

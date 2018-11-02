@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script>
+        let numbers = [1, 2, 3, 4, 5, 6];
+        let cars = ["Saab", "Volvo", "BMW"];
+        function iteration() {
+            let carsStr = "";
+            for (let i = 0; i < cars.length; i++) {
+                carsStr += i + 1 + ". " + cars[i] + " ";
+            }
+            let sum = numbers.reduce((pre, cur) => pre + cur);
+            document.getElementById("p1").innerHTML = "Paragraph no: 1 <br>" + carsStr + "<br>The Sum of the numbers is: " + sum +" and the Average is: " + sum/numbers.length;
+        }
+        function showLen() {
+            document.getElementById("p2").innerHTML = "Paragraph no: 2 <br>" + "Lenght of numbers is:" + numbers.length + "<br>Length of cars is:" + cars.length;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Напреден Веб Дизајн Вежби</h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <button onclick="iteration()">Array Iteration</button>
+    <button onclick="showLen()">Show Arrays Lenght</button>
+</body>
+
+</html>
