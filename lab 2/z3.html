@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadaca 3</title>
+    <script>
+        function addFile() {
+            let file = document.createElement("input");
+            file.setAttribute("type", "file");
+            document.getElementById("files").appendChild(file);
+        }
+        function removeLastFile() {
+            let inputs = document.getElementsByTagName("input");
+            if (inputs.length > 0)
+                document.getElementById("files").removeChild(inputs[inputs.length - 1]);
+        }
+        function change() {
+            let spans = document.getElementsByTagName("span");
+            for (span of spans) {
+                let a = document.createElement("a");
+                a.setAttribute("href", span.innerHTML);
+                a.innerHTML = span.innerHTML;
+                document.getElementById("spans").replaceChild(a,span);
+            }
+        }
+        class Image {
+            constructor(src, width, height){
+                this.src= src;
+                this.width=width;
+                this.height;
+            }
+        }
+        let images =[];
+        images.push(new Image("http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg",240,160));
+        images.push(new Image("http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg",320,195));
+        images.push(new Image("http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg",500,343));
+        function image(){
+            let random = Math.floor(Math.random()*3);
+            console.log(random);
+            document.getElementById("image").setAttribute("src",images[random].src);
+            document.getElementById("image").setAttribute("width",images[random].width);
+            document.getElementById("image").setAttribute("height",images[random].height);
+        }
+    </script>
+    <style>
+        #files{
+        width: 200px;
+    }
+    input[type="file"]{
+        margin-bottom: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <p>Upload files(s)</p>
+    <div id="files">
+        <input type="file">
+    </div>
+    <br>
+    <button onclick="addFile()">Add File</button>
+    <button onclick="removeLastFile()">Remove Last File</button>
+    <br><br>
+    <div id="spans">
+        <span>https://www.google.com/</span>
+    </div>
+    <br>
+    <button onclick="change()">Change</button>
+    <br><br>
+    <img id="image" src="">
+    <br>
+    <button onclick="image()">Image</button>
+</body>
+
+</html>

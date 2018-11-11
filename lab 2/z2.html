@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadaca 2</title>
+    <script>
+        function fibonacci() {
+            let fib = 0;
+            let curr = 1;
+            let prev = 0;
+            return () => {
+                fib = prev + curr;
+                prev = curr;
+                curr = fib;
+                return fib;
+            }
+        }
+        let fib_next = fibonacci();
+        console.log(fib_next());
+        console.log(fib_next());
+        console.log(fib_next());
+        console.log(fib_next());
+        console.log(fib_next());
+
+        function timeDifference() {
+            let timeCreated = new Date().getTime();
+            let lastCreated = timeCreated;
+  
+            return () => {
+                lastCreated = timeCreated;
+                timeCreated = new Date().getTime();
+                let timeElapsed = timeCreated - lastCreated;
+                return timeElapsed;
+            }
+        }
+
+        let last_call_func = timeDifference();
+        console.log(last_call_func());
+        console.log(last_call_func());
+        setTimeout(() => console.log(last_call_func()), 1000);
+        setTimeout(() => console.log(last_call_func()), 1500);
+        setTimeout(() => console.log(last_call_func()), 3000);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
