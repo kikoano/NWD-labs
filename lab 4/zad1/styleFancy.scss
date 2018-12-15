@@ -1,0 +1,56 @@
+@import "bodyStyle";
+
+$font-first: Helvetica, sans-serif;
+$font-second: "Times New Roman",Times, serif;
+$height: 342px;
+$background_color:#CCFFCC;
+$left:10%;
+$right:$left+65%;
+$top:55%;
+
+@mixin position($left,$top) {
+  position: absolute;
+  left: $left;
+  top:$top;
+}
+.first{
+  font-family: $font-first;
+}
+
+.second{
+  font-family: $font-second;
+}
+
+.containerOne{
+  height:$height;
+  background-color: $background_color;
+  .left{
+    @include position($left,$top);
+  }
+
+  .right{
+    @include position($right,$top);
+  }
+}
+
+%boxes {
+  width: 150px;
+  height: 50px;
+  border: solid 2px;
+  text-align: center;
+  margin: 20px;
+}
+
+.containerTwo{
+  @include position(45%,$top);
+
+  .boxOne{
+    @extend %boxes;
+    border-color: red;
+  }
+  .boxTwo{
+    @extend %boxes;
+    border-color: blue;
+  }
+
+}

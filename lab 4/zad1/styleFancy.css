@@ -1,0 +1,59 @@
+body {
+  background: #EBAD99;
+  position: absolute;
+  width: 99.2%;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.first {
+  font-family: Helvetica, sans-serif;
+}
+
+.second {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.containerOne {
+  height: 342px;
+  background-color: #CCFFCC;
+}
+
+.containerOne .left {
+  position: absolute;
+  left: 10%;
+  top: 55%;
+}
+
+.containerOne .right {
+  position: absolute;
+  left: 75%;
+  top: 55%;
+}
+
+.containerTwo .boxOne, .containerTwo .boxTwo {
+  width: 150px;
+  height: 50px;
+  border: solid 2px;
+  text-align: center;
+  margin: 20px;
+}
+
+.containerTwo {
+  position: absolute;
+  left: 45%;
+  top: 55%;
+}
+
+.containerTwo .boxOne {
+  border-color: red;
+}
+
+.containerTwo .boxTwo {
+  border-color: blue;
+}
+/*# sourceMappingURL=styleFancy.css.map */

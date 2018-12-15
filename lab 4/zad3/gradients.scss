@@ -1,0 +1,67 @@
+/// @param {Color} $color (grey) - Base color
+/// @param {number} $number (50) - number of shades
+/// @return {List}
+
+@function shades-of($color: grey, $number: 50) {
+  $colors:();
+  $stops: 100% / $number;
+  @for $i from 1 to $number{
+    $colors:append($colors,lighten($color,$i) $i * $stops,comma);
+    @if $i< $number{
+      $colors:append($colors,lighten($color,($i+1)) $i * $stops,comma);
+    }
+  } 
+  @return $colors;
+}
+
+// Output
+// ---
+$shades: shades-of(red,50);
+#{"shades-red"} {
+  @each $shade in $shades {
+    shade: #{$shade}
+  }
+}
+html {
+  position: relative;
+  height: 100%;
+  background: #333;
+  
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    height: 1em;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  &:after {
+    top: auto;
+    bottom: 0;
+  }
+  
+  &:before {
+    background: linear-gradient(60deg,$shades);
+  
+  }
+  
+  &:after {
+    background: linear-gradient(80deg,$shades);
+  }
+}
+
+body {
+  padding-top: 20px;  
+}
+
+p {
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: white;
+}

@@ -1,0 +1,143 @@
+shades-red {
+  shade: #ff0505 2%;
+  shade: #ff0a0a 2%;
+  shade: #ff0a0a 4%;
+  shade: #ff0f0f 4%;
+  shade: #ff0f0f 6%;
+  shade: #ff1414 6%;
+  shade: #ff1414 8%;
+  shade: #ff1a1a 8%;
+  shade: #ff1a1a 10%;
+  shade: #ff1f1f 10%;
+  shade: #ff1f1f 12%;
+  shade: #ff2424 12%;
+  shade: #ff2424 14%;
+  shade: #ff2929 14%;
+  shade: #ff2929 16%;
+  shade: #ff2e2e 16%;
+  shade: #ff2e2e 18%;
+  shade: #ff3333 18%;
+  shade: #ff3333 20%;
+  shade: #ff3838 20%;
+  shade: #ff3838 22%;
+  shade: #ff3d3d 22%;
+  shade: #ff3d3d 24%;
+  shade: #ff4242 24%;
+  shade: #ff4242 26%;
+  shade: #ff4747 26%;
+  shade: #ff4747 28%;
+  shade: #ff4d4d 28%;
+  shade: #ff4d4d 30%;
+  shade: #ff5252 30%;
+  shade: #ff5252 32%;
+  shade: #ff5757 32%;
+  shade: #ff5757 34%;
+  shade: #ff5c5c 34%;
+  shade: #ff5c5c 36%;
+  shade: #ff6161 36%;
+  shade: #ff6161 38%;
+  shade: #ff6666 38%;
+  shade: #ff6666 40%;
+  shade: #ff6b6b 40%;
+  shade: #ff6b6b 42%;
+  shade: #ff7070 42%;
+  shade: #ff7070 44%;
+  shade: #ff7575 44%;
+  shade: #ff7575 46%;
+  shade: #ff7a7a 46%;
+  shade: #ff7a7a 48%;
+  shade: #ff8080 48%;
+  shade: #ff8080 50%;
+  shade: #ff8585 50%;
+  shade: #ff8585 52%;
+  shade: #ff8a8a 52%;
+  shade: #ff8a8a 54%;
+  shade: #ff8f8f 54%;
+  shade: #ff8f8f 56%;
+  shade: #ff9494 56%;
+  shade: #ff9494 58%;
+  shade: #ff9999 58%;
+  shade: #ff9999 60%;
+  shade: #ff9e9e 60%;
+  shade: #ff9e9e 62%;
+  shade: #ffa3a3 62%;
+  shade: #ffa3a3 64%;
+  shade: #ffa8a8 64%;
+  shade: #ffa8a8 66%;
+  shade: #ffadad 66%;
+  shade: #ffadad 68%;
+  shade: #ffb3b3 68%;
+  shade: #ffb3b3 70%;
+  shade: #ffb8b8 70%;
+  shade: #ffb8b8 72%;
+  shade: #ffbdbd 72%;
+  shade: #ffbdbd 74%;
+  shade: #ffc2c2 74%;
+  shade: #ffc2c2 76%;
+  shade: #ffc7c7 76%;
+  shade: #ffc7c7 78%;
+  shade: #ffcccc 78%;
+  shade: #ffcccc 80%;
+  shade: #ffd1d1 80%;
+  shade: #ffd1d1 82%;
+  shade: #ffd6d6 82%;
+  shade: #ffd6d6 84%;
+  shade: #ffdbdb 84%;
+  shade: #ffdbdb 86%;
+  shade: #ffe0e0 86%;
+  shade: #ffe0e0 88%;
+  shade: #ffe6e6 88%;
+  shade: #ffe6e6 90%;
+  shade: #ffebeb 90%;
+  shade: #ffebeb 92%;
+  shade: #fff0f0 92%;
+  shade: #fff0f0 94%;
+  shade: #fff5f5 94%;
+  shade: #fff5f5 96%;
+  shade: snow 96%;
+  shade: snow 98%;
+  shade: white 98%;
+}
+
+html {
+  position: relative;
+  height: 100%;
+  background: #333;
+}
+
+html:before, html:after {
+  position: absolute;
+  content: '';
+  height: 1em;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+html:after {
+  top: auto;
+  bottom: 0;
+}
+
+html:before {
+  background: linear-gradient(60deg, #ff0505 2%, #ff0a0a 2%, #ff0a0a 4%, #ff0f0f 4%, #ff0f0f 6%, #ff1414 6%, #ff1414 8%, #ff1a1a 8%, #ff1a1a 10%, #ff1f1f 10%, #ff1f1f 12%, #ff2424 12%, #ff2424 14%, #ff2929 14%, #ff2929 16%, #ff2e2e 16%, #ff2e2e 18%, #ff3333 18%, #ff3333 20%, #ff3838 20%, #ff3838 22%, #ff3d3d 22%, #ff3d3d 24%, #ff4242 24%, #ff4242 26%, #ff4747 26%, #ff4747 28%, #ff4d4d 28%, #ff4d4d 30%, #ff5252 30%, #ff5252 32%, #ff5757 32%, #ff5757 34%, #ff5c5c 34%, #ff5c5c 36%, #ff6161 36%, #ff6161 38%, #ff6666 38%, #ff6666 40%, #ff6b6b 40%, #ff6b6b 42%, #ff7070 42%, #ff7070 44%, #ff7575 44%, #ff7575 46%, #ff7a7a 46%, #ff7a7a 48%, #ff8080 48%, #ff8080 50%, #ff8585 50%, #ff8585 52%, #ff8a8a 52%, #ff8a8a 54%, #ff8f8f 54%, #ff8f8f 56%, #ff9494 56%, #ff9494 58%, #ff9999 58%, #ff9999 60%, #ff9e9e 60%, #ff9e9e 62%, #ffa3a3 62%, #ffa3a3 64%, #ffa8a8 64%, #ffa8a8 66%, #ffadad 66%, #ffadad 68%, #ffb3b3 68%, #ffb3b3 70%, #ffb8b8 70%, #ffb8b8 72%, #ffbdbd 72%, #ffbdbd 74%, #ffc2c2 74%, #ffc2c2 76%, #ffc7c7 76%, #ffc7c7 78%, #ffcccc 78%, #ffcccc 80%, #ffd1d1 80%, #ffd1d1 82%, #ffd6d6 82%, #ffd6d6 84%, #ffdbdb 84%, #ffdbdb 86%, #ffe0e0 86%, #ffe0e0 88%, #ffe6e6 88%, #ffe6e6 90%, #ffebeb 90%, #ffebeb 92%, #fff0f0 92%, #fff0f0 94%, #fff5f5 94%, #fff5f5 96%, snow 96%, snow 98%, white 98%);
+}
+
+html:after {
+  background: linear-gradient(80deg, #ff0505 2%, #ff0a0a 2%, #ff0a0a 4%, #ff0f0f 4%, #ff0f0f 6%, #ff1414 6%, #ff1414 8%, #ff1a1a 8%, #ff1a1a 10%, #ff1f1f 10%, #ff1f1f 12%, #ff2424 12%, #ff2424 14%, #ff2929 14%, #ff2929 16%, #ff2e2e 16%, #ff2e2e 18%, #ff3333 18%, #ff3333 20%, #ff3838 20%, #ff3838 22%, #ff3d3d 22%, #ff3d3d 24%, #ff4242 24%, #ff4242 26%, #ff4747 26%, #ff4747 28%, #ff4d4d 28%, #ff4d4d 30%, #ff5252 30%, #ff5252 32%, #ff5757 32%, #ff5757 34%, #ff5c5c 34%, #ff5c5c 36%, #ff6161 36%, #ff6161 38%, #ff6666 38%, #ff6666 40%, #ff6b6b 40%, #ff6b6b 42%, #ff7070 42%, #ff7070 44%, #ff7575 44%, #ff7575 46%, #ff7a7a 46%, #ff7a7a 48%, #ff8080 48%, #ff8080 50%, #ff8585 50%, #ff8585 52%, #ff8a8a 52%, #ff8a8a 54%, #ff8f8f 54%, #ff8f8f 56%, #ff9494 56%, #ff9494 58%, #ff9999 58%, #ff9999 60%, #ff9e9e 60%, #ff9e9e 62%, #ffa3a3 62%, #ffa3a3 64%, #ffa8a8 64%, #ffa8a8 66%, #ffadad 66%, #ffadad 68%, #ffb3b3 68%, #ffb3b3 70%, #ffb8b8 70%, #ffb8b8 72%, #ffbdbd 72%, #ffbdbd 74%, #ffc2c2 74%, #ffc2c2 76%, #ffc7c7 76%, #ffc7c7 78%, #ffcccc 78%, #ffcccc 80%, #ffd1d1 80%, #ffd1d1 82%, #ffd6d6 82%, #ffd6d6 84%, #ffdbdb 84%, #ffdbdb 86%, #ffe0e0 86%, #ffe0e0 88%, #ffe6e6 88%, #ffe6e6 90%, #ffebeb 90%, #ffebeb 92%, #fff0f0 92%, #fff0f0 94%, #fff5f5 94%, #fff5f5 96%, snow 96%, snow 98%, white 98%);
+}
+
+body {
+  padding-top: 20px;
+}
+
+p {
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: white;
+}
+/*# sourceMappingURL=gradients.css.map */
